@@ -22,7 +22,7 @@ public class Main {
     //    returned
     public static List<String> transformFilter(List<String> strings){
         return strings.stream().
-                filter((each) -> each.length()==4).
+                filter((each) -> each.length()<4).
                 collect(Collectors.toList());
     }
 
